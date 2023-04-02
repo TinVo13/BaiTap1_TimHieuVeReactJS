@@ -1,3 +1,8 @@
+import 'firebase/firestore'
+import 'firebase/auth'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
     apiKey: "AIzaSyANdjA6bYmA9UYDsAWbcD0OmoS7eopgQyg",
     authDomain: "cloud-firestore-9b4b1.firebaseapp.com",
@@ -6,4 +11,7 @@ const firebaseConfig = {
     messagingSenderId: "311965946531",
     appId: "1:311965946531:web:bdb06f801dbf4a87192516",
     measurementId: "G-7Z03P2SK09"
-  };
+};
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+export default app;

@@ -1,4 +1,4 @@
-import { ActionType } from "../action-tyes"
+import { ActionType } from "../action-types"
 interface IncreaseAction{
     type: ActionType.INCREASE,
     count: number
